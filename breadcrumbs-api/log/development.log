@@ -35,3 +35,162 @@ Processing by TrailsController#index as HTML
 Completed 200 OK in 17ms (Views: 7.5ms | ActiveRecord: 9.7ms | Allocations: 4629)
 
 
+Started GET "/trails" for ::1 at 2020-08-18 15:03:23 -0400
+Processing by TrailsController#index as HTML
+  [1m[36mTrail Load (1.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 1.8ms | Allocations: 1035)
+
+
+Started GET "/trails" for ::1 at 2020-08-18 20:18:31 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrailsController#index as HTML
+  [1m[36mTrail Load (0.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 9.8ms | ActiveRecord: 9.5ms | Allocations: 5553)
+
+
+Started GET "/trails" for ::1 at 2020-08-18 20:18:38 -0400
+Processing by TrailsController#index as HTML
+  [1m[36mTrail Load (0.5ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 958)
+
+
+Started GET "/trails" for ::1 at 2020-08-18 20:53:23 -0400
+Processing by TrailsController#index as */*
+  [1m[36mTrail Load (0.9ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.9ms | Allocations: 1037)
+
+
+Started GET "/trails" for ::1 at 2020-08-18 20:57:12 -0400
+Processing by TrailsController#index as */*
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 941)
+
+
+Started GET "/trails" for ::1 at 2020-08-18 20:57:19 -0400
+Processing by TrailsController#index as */*
+  [1m[36mTrail Load (2.0ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 2.0ms | Allocations: 941)
+
+
+Started GET "/trails" for ::1 at 2020-08-18 21:49:10 -0400
+Processing by TrailsController#index as */*
+  [1m[36mTrail Load (0.8ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.8ms | Allocations: 1024)
+
+
+Started PUT "/trails" for ::1 at 2020-08-18 22:06:54 -0400
+  
+ActionController::RoutingError (No route matches [PUT] "/trails"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/trails" for ::1 at 2020-08-18 22:07:51 -0400
+Processing by TrailsController#create as */*
+  Parameters: {"startLat"=>"2.2", "startLng"=>"2.2", "endLat"=>"2.2", "endLng"=>"2.2", "date"=>"2020-08-18"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 130)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: trail):
+  
+app/controllers/trails_controller.rb:49:in `trail_params'
+app/controllers/trails_controller.rb:18:in `create'
+Started POST "/trails" for ::1 at 2020-08-18 22:08:02 -0400
+Processing by TrailsController#create as */*
+  Parameters: {"startLat"=>"2.2", "startLng"=>"2.2", "endLat"=>"2.2", "endLng"=>"2.2"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 122)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: trail):
+  
+app/controllers/trails_controller.rb:49:in `trail_params'
+app/controllers/trails_controller.rb:18:in `create'
+Started GET "/" for ::1 at 2020-08-18 22:08:08 -0400
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"startLat"=>"2.2", "startLng"=>"2.2", "endLat"=>"2.2", "endLng"=>"2.2"}
+  Rendering /Users/anniedavis/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/anniedavis/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.4ms | Allocations: 409)
+Completed 200 OK in 24ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 2288)
+
+
+Started GET "/trails" for ::1 at 2020-08-18 22:08:13 -0400
+Processing by TrailsController#index as */*
+  Parameters: {"startLat"=>"2.2", "startLng"=>"2.2", "endLat"=>"2.2", "endLng"=>"2.2"}
+  [1m[36mTrail Load (0.7ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.7ms | Allocations: 1041)
+
+
+Started POST "/trails" for ::1 at 2020-08-18 22:08:44 -0400
+Processing by TrailsController#create as */*
+  Parameters: {"startLat"=>"2.2", "startLng"=>"2.2", "endLat"=>"2.2", "endLng"=>"2.2"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 120)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: trail):
+  
+app/controllers/trails_controller.rb:49:in `trail_params'
+app/controllers/trails_controller.rb:18:in `create'
+Started GET "/trails" for ::1 at 2020-08-18 22:09:16 -0400
+Processing by TrailsController#index as HTML
+  [1m[36mTrail Load (0.4ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 938)
+
+
+Started GET "/trails/1" for ::1 at 2020-08-18 22:09:31 -0400
+Processing by TrailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrail Load (0.3ms)[0m  [1m[34mSELECT "trails".* FROM "trails" WHERE "trails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trails_controller.rb:44:in `set_trail'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 2235)
+
+
+Started POST "/trails" for ::1 at 2020-08-18 22:10:22 -0400
+Processing by TrailsController#create as */*
+  Parameters: {"startLng"=>"2.2", "startLat"=>"2.2", "endLng"=>"2.2", "endLat"=>"2.2"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 120)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: trail):
+  
+app/controllers/trails_controller.rb:49:in `trail_params'
+app/controllers/trails_controller.rb:18:in `create'
+Started GET "/trails" for ::1 at 2020-08-18 22:19:58 -0400
+Processing by TrailsController#index as */*
+  Parameters: {"startLng"=>"2.2", "startLat"=>"2.2", "endLng"=>"2.2", "endLat"=>"2.2"}
+  [1m[36mTrail Load (1.1ms)[0m  [1m[34mSELECT "trails".* FROM "trails"[0m
+  ↳ app/controllers/trails_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.1ms | Allocations: 1023)
+
+
